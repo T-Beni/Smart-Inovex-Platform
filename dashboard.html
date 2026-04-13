@@ -1,0 +1,198 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Smart Inovice | Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="Imagini/logoTransparent.png" />
+  </head>
+  <body>
+    <!--Partea fixa-->
+
+    <!--Header-->
+    <section id="half1">
+      <div id="component1">
+        <img id="imgLogo1" src="Imagini/logoTransparent.png" />
+        <p id="textLogo1">Smart Inovice</p>
+      </div>
+      <div id="component2">
+        <div id="component2Text">
+          <p id="dashboardText">Dashboard</p>
+          <p id="dashboardText2">Prezentarea dvs. financiară dintr-o privire</p>
+        </div>
+        <div id="containerHeaderRight">
+          <div id="containerSearchBar">
+            <div id="searchBar">
+              <p id="searchBarSymbol">🔎︎</p>
+              <input
+                type="text"
+                id="searchBarInput"
+                placeholder="Caută facturi..."
+              />
+            </div>
+          </div>
+          <button id="notificari"></button>
+        </div>
+      </div>
+    </section>
+    <section id="half2">
+      <!--Bara de navigare-->
+      <div id="component3">
+        <div class="selected" id="dashboardNavButton">
+          <svg id="svgDashboard" viewBox="0 0 30 30" class="navSVG">
+            <rect
+              x="5"
+              y="5"
+              width="8"
+              height="12"
+              rx="2"
+              fill="transparent"
+              stroke="#29a36c"
+              stroke-width="2"
+            />
+            <rect
+              x="18"
+              y="5"
+              width="8"
+              height="5"
+              rx="2"
+              fill="transparent"
+              stroke="#29a36c"
+              stroke-width="2"
+            />
+            <rect
+              x="18"
+              y="15"
+              width="8"
+              height="12"
+              rx="2"
+              fill="transparent"
+              stroke="#29a36c"
+              stroke-width="2"
+            />
+            <rect
+              x="5"
+              y="22"
+              width="8"
+              height="5"
+              rx="2"
+              fill="transparent"
+              stroke="#29a36c"
+              stroke-width="2"
+            />
+          </svg>
+          <p class="navText">Dashboard</p>
+        </div>
+        <div class="butonNav">
+          <svg id="svgDashboard" viewBox="0 0 20 20" class="navSVG">
+            <path
+              d="
+    M 5 5
+    Q 7 1 9 5
+    Q 11 1 13 5
+    Q 15 1 17 5
+    L 17 17
+    Q 15 19 13 17
+    Q 11 19 9 17
+    Q 7 19 5 17
+    Z
+
+    M 10.5 7
+    L 10.5 14
+
+    M 13 8
+    Q 13 7 10.5 7
+    Q 8 7 8 8.5
+    Q 8 10 10.5 10
+    Q 13 10 13 11.5
+    Q 13 14 10.5 14
+    Q 8 14 8 12.5
+  "
+              fill="transparent"
+              stroke="#6b7280"
+              stroke-width="2"
+            />
+          </svg>
+          <p id="billsNavText" class="navText">Bills</p>
+        </div>
+        <div class="butonNav"></div>
+        <div class="butonNav"></div>
+        <div class="butonNav"></div>
+        <div class="butonNav"></div>
+
+        <button id="restrange">&lt;</button>
+      </div>
+
+      <!--Partea mobila-->
+      <div id="component4">
+        <div class="paddingClasic" id="containerAux1">
+          <!--Totalul si activele-->
+          <section
+            class="backgroundClasic index1 displayFlex gap1 autoSize marginBottom"
+          >
+            <div
+              class="borderNormal rotunjit backgroundAlb tranzitie hoverUmbra marime1"
+              id="totalLunarDiv"
+            >
+            <p id="procentTotal" class="valDown">-5.2%</p>
+            <svg id="iconTotalLuna">
+                <path d="
+                M 27 13
+                L 15 13
+                Q 10 17 15 21
+                L 25 22
+                Q 30 25 25 30
+                L 13 30
+
+                M 20 8
+                L 20 35
+                "
+                fill="transparent"
+              stroke="#29a36c"
+              stroke-width="2.5">
+            </svg>
+            <p id="sumaLunaraNumar">20,456.5 RON</p>
+            <p id="sumaLunaraText">Total în această lună</p></div>
+
+            <div
+              class="borderNormal rotunjit backgroundAlb tranzitie hoverUmbra marime1"
+            ></div>
+            <div
+              class="borderNormal rotunjit backgroundAlb tranzitie hoverUmbra marime1"
+            ></div>
+            <div
+              class="borderNormal rotunjit backgroundAlb tranzitie hoverUmbra marime1 gap0"
+            ></div>
+          </section>
+
+          <!--Grafic-->
+          <section
+            class="backgroundClasic index1 displayFlex gap1 autoSize marginTop marginBottom"
+          >
+            <div
+              class="borderNormal rotunjit backgroundAlb tranzitie marime1"
+              id="graficDesenDiv"
+            ></div>
+            <div
+              class="borderNormal rotunjit backgroundAlb tranzitie marime1"
+              id="graficCercDiv"
+            ></div>
+          </section>
+
+          <!--Ai si Bills-->
+          <section
+            class="backgroundClasic index1 displayFlex gap1 autoSize marginTop marginBottom"
+          >
+            <div
+              class="borderNormal rotunjit backgroundAlb tranzitie marime1"
+              id="billsListDiv"
+            ></div>
+            <div
+              class="borderNormal rotunjit backgroundAlb tranzitie marime1"
+              id="aiDiv"
+            ></div>
+          </section>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
