@@ -237,11 +237,11 @@ body{
 }
 #graficDesenDiv{
   width:65%;
-  height:400px;
+  height:350px;
 }
 #graficCercDiv{
   width:29%;
-  height:400px;
+  height:350px;
 }
 #aiDiv{
   width: 47%;
@@ -365,6 +365,135 @@ body{
   margin-top:0px;
   padding-left:20px;
 }
+#procentActiveBills{
+  padding-left:5px;
+  padding-right:5px;
+  padding-top:3px;
+  height:20px;
+  width:auto;
+  text-align: center;
+  flex-basis:5%;
+  justify-self: right;
+  font-size:13px;
+  font-family:'Inter';
+  margin-right:10px;
+  border-radius:0.75rem;
+  font-weight: 600;
+}
+#iconActiveBills{
+  background-color: rgb(41, 163, 108, 0.2);
+  border-radius:0.75rem;
+  height:40px;
+  width:40px;
+  position:absolute;
+  top:40px;
+  margin-left:20px;
+}
+#activeBillsNumar{
+  font-family:'Space Grotesk';
+  font-weight:bold;
+  font-size:30px;
+  padding-left:20px;
+  margin-bottom:0px;
+  margin-top:40px;
+}
+#activeBillsText{
+  font-family:'Inter';
+  font-size:13px;
+  color:hsl(var(--muted-foreground));
+  margin-top:0px;
+  padding-left:20px;
+}
+#inAsteptareNumar{
+  font-family:'Space Grotesk';
+  font-weight:bold;
+  font-size:30px;
+  padding-left:20px;
+  margin-bottom:0px;
+}
+#inAsteptareText{
+  font-family:'Inter';
+  font-size:13px;
+  color:hsl(var(--muted-foreground));
+  margin-top:0px;
+  padding-left:20px;
+}
+#iconInAsteptare{
+  background-color: rgb(41, 163, 108, 0.2);
+  border-radius:0.75rem;
+  height:40px;
+  width:40px;
+  margin-top:10px;
+  margin-left:20px;
+}
+#platiteLunaAstaNumar{
+  font-family:'Space Grotesk';
+  font-weight:bold;
+  font-size:30px;
+  padding-left:20px;
+  margin-bottom:0px;
+}
+#platiteLunaAstaText{
+  font-family:'Inter';
+  font-size:13px;
+  color:hsl(var(--muted-foreground));
+  margin-top:0px;
+  padding-left:20px;
+}
+#iconPlatiteLunaAsta{
+  background-color: rgb(41, 163, 108, 0.2);
+  border-radius:0.75rem;
+  height:40px;
+  width:40px;
+  margin-top:10px;
+  margin-left:20px;
+}
+#tendintaCheltuielilorText{
+  font-family:'Space Grotesk';
+  font-size:20px;
+  font-weight:bold;
+  padding-left:20px;
+  margin-bottom:0px;
+}
+#prezentareGeneralaText{
+  font-family:'Inter';
+  font-size:13px;
+  color:hsl(var(--muted-foreground));
+  margin-top:0px;
+  padding-left:20px;
+}
+#legendaGrafic{
+  font-family:'Inter';
+  font-size:15px;
+  color:black;
+  justify-self: right;
+  margin-top:-40px;
+  margin-right:20px;
+}
+#graficPrincipal{
+  height:100px;
+  width:100px;
+  background-color:transparent;
+  width:96%;
+  height:75%;
+  margin:20px;
+  margin-top:30px;
+  margin-left:5%;
+}
+#peCategoriiText{
+  font-family:'Space Grotesk';
+  font-size:20px;
+  font-weight:bold;
+  padding-left:20px;
+  margin-bottom:0px;
+}
+#defalcareLunaraText{
+  font-family:'Inter';
+  font-size:13px;
+  color:hsl(var(--muted-foreground));
+  margin-top:0px;
+  padding-left:20px;
+}
 
 /* Stiluri valori */
 .valUp{
@@ -379,6 +508,7 @@ body{
   background-color: rgb(107, 114, 128, 0.2);
   color:hsl(var(--muted-foreground));
 }
+
 
 /* Clase comune */
 .marime1{

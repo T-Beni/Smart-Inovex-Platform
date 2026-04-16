@@ -133,9 +133,10 @@
               class="borderNormal rotunjit backgroundAlb tranzitie hoverUmbra marime1"
               id="totalLunarDiv"
             >
-            <p id="procentTotal" class="valDown">-5.2%</p>
-            <svg id="iconTotalLuna">
-                <path d="
+              <p id="procentTotal" class="valDown">-5.2%</p>
+              <svg id="iconTotalLuna">
+                <path
+                  d="
                 M 27 13
                 L 15 13
                 Q 10 17 15 21
@@ -146,36 +147,437 @@
                 M 20 8
                 L 20 35
                 "
-                fill="transparent"
-              stroke="#29a36c"
-              stroke-width="2.5">
-            </svg>
-            <p id="sumaLunaraNumar">20,456.5 RON</p>
-            <p id="sumaLunaraText">Total în această lună</p></div>
+                  fill="transparent"
+                  stroke="#29a36c"
+                  stroke-width="2.5"
+                />
+              </svg>
+              <p id="sumaLunaraNumar">20,456.5 RON</p>
+              <p id="sumaLunaraText">Total în această lună</p>
+            </div>
 
             <div
               class="borderNormal rotunjit backgroundAlb tranzitie hoverUmbra marime1"
-            ></div>
+            >
+              <p id="procentActiveBills" class="valUp">+2%</p>
+              <svg id="iconActiveBills" viewBox="-1.5 -2 25 25">
+                <path
+                  d="
+    M 5 5
+    Q 7 1 9 5
+    Q 11 1 13 5
+    Q 15 1 17 5
+    L 17 17
+    Q 15 19 13 17
+    Q 11 19 9 17
+    Q 7 19 5 17
+    Z
+
+    M 10.5 7
+    L 10.5 14
+
+    M 13 8
+    Q 13 7 10.5 7
+    Q 8 7 8 8.5
+    Q 8 10 10.5 10
+    Q 13 10 13 11.5
+    Q 13 14 10.5 14
+    Q 8 14 8 12.5
+  "
+                  fill="transparent"
+                  stroke="#29a36c"
+                  stroke-width="1.5"
+                />
+              </svg>
+              <p id="activeBillsNumar">8</p>
+              <p id="activeBillsText">Facturi active</p>
+            </div>
+
             <div
               class="borderNormal rotunjit backgroundAlb tranzitie hoverUmbra marime1"
-            ></div>
+              id="inAsteptare"
+            >
+              <svg id="iconInAsteptare">
+                <circle
+                  cx="20"
+                  cy="20"
+                  r="12"
+                  fill="none"
+                  stroke="#29a36c"
+                  stroke-width="2"
+                />
+                <circle
+                  cx="20"
+                  cy="20"
+                  r="1"
+                  fill="none"
+                  stroke="#29a36c"
+                  stroke-width="2"
+                />
+                <path
+                  d="M 20 20 L 21 11 M 20 20 L 29 21"
+                  fill="none"
+                  stroke="#29a36c"
+                  stroke-width="2"
+                />
+              </svg>
+              <p id="inAsteptareNumar">6</p>
+              <p id="inAsteptareText">În așteptare</p>
+            </div>
+
             <div
               class="borderNormal rotunjit backgroundAlb tranzitie hoverUmbra marime1 gap0"
-            ></div>
+            >
+              <svg
+                id="iconPlatiteLunaAsta"
+                width="24"
+                height="24"
+                viewBox="-2.5 -2.5 30 30"
+                fill="none"
+                stroke="#29a36c
+            "
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <polyline points="22 17 13.5 8.5 8.5 13.5 2 7"></polyline>
+                <polyline points="16 17 22 17 22 11"></polyline>
+              </svg>
+              <p id="platiteLunaAstaNumar">8</p>
+              <p id="platiteLunaAstaText">Plătite luna asta</p>
+            </div>
           </section>
 
           <!--Grafic-->
           <section
             class="backgroundClasic index1 displayFlex gap1 autoSize marginTop marginBottom"
           >
+            <!--Textul Graficului-->
             <div
               class="borderNormal rotunjit backgroundAlb tranzitie marime1"
               id="graficDesenDiv"
-            ></div>
+            >
+              <div id="textGrafic">
+                <p id="tendintaCheltuielilorText">Tendința cheltuielilor</p>
+                <p id="prezentareGeneralaText">
+                  Prezentare generală a ultimelor 7 luni
+                </p>
+              </div>
+              <div id="legendaGrafic">
+                <span style="color: #29a36c; margin-right: 5px">●</span>Total
+                Lunar
+              </div>
+              <svg id="graficPrincipal">
+                <g id="sumaVerticala">
+                  <text
+                    orientation="left"
+                    width="60"
+                    height="205"
+                    stroke="none"
+                    font-size="12"
+                    x="32"
+                    y="9"
+                    text-anchor="end"
+                    fill="hsl(220, 9%, 46%)"
+                    font-family="Inter"
+                  >
+                    <tspan x="32" dy="0.355em">$2.4k</tspan>
+                  </text>
+                  <line
+                    stroke-dasharray="3 3"
+                    stroke="hsl(220, 13%, 91%)"
+                    fill="none"
+                    x="40"
+                    y="5"
+                    width="558"
+                    height="205"
+                    x1="40"
+                    y1="5"
+                    x2="940"
+                    y2="5"
+                  ></line>
+                  <text
+                    orientation="left"
+                    width="60"
+                    height="205"
+                    stroke="none"
+                    font-size="12"
+                    x="32"
+                    y="56.25"
+                    text-anchor="end"
+                    fill="hsl(220, 9%, 46%)"
+                    font-family="Inter"
+                  >
+                    <tspan x="32" dy="0.355em">$1.8k</tspan>
+                  </text>
+                  <line
+                    stroke-dasharray="3 3"
+                    stroke="hsl(220, 13%, 91%)"
+                    fill="none"
+                    x="40"
+                    y="5"
+                    width="558"
+                    height="205"
+                    x1="40"
+                    y1="210"
+                    x2="940"
+                    y2="210"
+                  ></line>
+                  <text
+                    orientation="left"
+                    width="60"
+                    height="205"
+                    stroke="none"
+                    font-size="12"
+                    x="32"
+                    y="107.5"
+                    text-anchor="end"
+                    fill="hsl(220, 9%, 46%)"
+                    font-family="Inter"
+                  >
+                    <tspan x="32" dy="0.355em">$1.2k</tspan>
+                  </text>
+                  <line
+                    stroke-dasharray="3 3"
+                    stroke="hsl(220, 13%, 91%)"
+                    fill="none"
+                    x="40"
+                    y="5"
+                    width="558"
+                    height="205"
+                    x1="40"
+                    y1="158.75"
+                    x2="940"
+                    y2="158.75"
+                  ></line>
+                  <text
+                    orientation="left"
+                    width="60"
+                    height="205"
+                    stroke="none"
+                    font-size="12"
+                    x="32"
+                    y="158.75"
+                    text-anchor="end"
+                    fill="hsl(220, 9%, 46%)"
+                    font-family="Inter"
+                  >
+                    <tspan x="32" dy="0.355em">$0.6k</tspan>
+                  </text>
+                  <line
+                    stroke-dasharray="3 3"
+                    stroke="hsl(220, 13%, 91%)"
+                    fill="none"
+                    x="40"
+                    y="5"
+                    width="558"
+                    height="205"
+                    x1="40"
+                    y1="107.5"
+                    x2="940"
+                    y2="107.5"
+                  ></line>
+                  <text
+                    orientation="left"
+                    width="60"
+                    height="205"
+                    stroke="none"
+                    font-size="12"
+                    x="32"
+                    y="210"
+                    text-anchor="end"
+                    fill="hsl(220, 9%, 46%)"
+                    font-family="Inter"
+                  >
+                    <tspan x="32" dy="0.355em">$0k</tspan>
+                  </text>
+                  <line
+                    stroke-dasharray="3 3"
+                    stroke="hsl(220, 13%, 91%)"
+                    fill="none"
+                    x="40"
+                    y="5"
+                    width="558"
+                    height="205"
+                    x1="40"
+                    y1="56.25"
+                    x2="940"
+                    y2="56.25"
+                  ></line>
+                </g>
+                <g id="timpOrizontal">
+                  <text
+                    orientation="bottom"
+                    width="558"
+                    height="30"
+                    stroke="none"
+                    font-size="12"
+                    x="40"
+                    y="218"
+                    text-anchor="middle"
+                    fill="hsl(220, 9%, 46%)"
+                    font-family="Inter"
+                  >
+                    <tspan x="40" dy="0.71em">Oct</tspan>
+                  </text>
+                  <text
+                    orientation="bottom"
+                    width="558"
+                    height="30"
+                    stroke="none"
+                    font-size="12"
+                    x="133"
+                    y="218"
+                    text-anchor="middle"
+                    fill="hsl(220, 9%, 46%)"
+                    font-family="Inter"
+                  >
+                    <tspan x="190" dy="0.71em">Nov</tspan>
+                  </text>
+                  <text
+                    orientation="bottom"
+                    width="558"
+                    height="30"
+                    stroke="none"
+                    font-size="12"
+                    x="226"
+                    y="218"
+                    text-anchor="middle"
+                    fill="hsl(220, 9%, 46%)"
+                    font-family="Inter"
+                  >
+                    <tspan x="340" dy="0.71em">Dec</tspan>
+                  </text>
+                  <text
+                    orientation="bottom"
+                    width="558"
+                    height="30"
+                    stroke="none"
+                    font-size="12"
+                    x="319"
+                    y="218"
+                    text-anchor="middle"
+                    fill="hsl(220, 9%, 46%)"
+                    font-family="Inter"
+                  >
+                    <tspan x="490" dy="0.71em">Jan</tspan>
+                  </text>
+                  <text
+                    orientation="bottom"
+                    width="558"
+                    height="30"
+                    stroke="none"
+                    font-size="12"
+                    x="412"
+                    y="218"
+                    text-anchor="middle"
+                    fill="hsl(220, 9%, 46%)"
+                    font-family="Inter"
+                  >
+                    <tspan x="640" dy="0.71em">Feb</tspan>
+                  </text>
+                  <text
+                    orientation="bottom"
+                    width="558"
+                    height="30"
+                    stroke="none"
+                    font-size="12"
+                    x="505"
+                    y="218"
+                    text-anchor="middle"
+                    fill="hsl(220, 9%, 46%)"
+                    font-family="Inter"
+                  >
+                    <tspan x="790" dy="0.71em">Mar</tspan>
+                  </text>
+                  <text
+                    orientation="bottom"
+                    width="558"
+                    height="30"
+                    stroke="none"
+                    font-size="12"
+                    x="592.921875"
+                    y="218"
+                    text-anchor="middle"
+                    fill="hsl(220, 9%, 46%)"
+                    font-family="Inter"
+                  >
+                    <tspan x="940" dy="0.71em">Apr</tspan>
+                  </text>
+                </g>
+                <g class="recharts-layer">
+                  <defs>
+                    <linearGradient
+                      id="colorAmount"
+                      x1="0"
+                      y1="0"
+                      x2="0"
+                      y2="1"
+                    >
+                      <stop
+                        offset="5%"
+                        stop-color="hsl(153, 60%, 40%)"
+                        stop-opacity="0.3"
+                      ></stop>
+                      <stop
+                        offset="95%"
+                        stop-color="hsl(153, 60%, 40%)"
+                        stop-opacity="0"
+                      ></stop>
+                    </linearGradient>
+                  </defs>
+                  <path
+                    stroke-width="2.5"
+                    fill-opacity="1"
+                    fill="url(#colorAmount)"
+                    width="558"
+                    height="205"
+                    stroke="none"
+                    d="M 40 30.625
+C 90 39.594, 140 48.563, 190 48.563
+C 240 48.563, 290 5, 340 5
+C 390 5, 440 16.104, 490 22.083
+C 540 28.063, 590 40.875, 640 40.875
+C 690 40.875, 740 26.354, 790 26.354
+C 840 26.354, 890 39.167, 940 51.979
+L 940 210
+C 890 210, 840 210, 790 210
+C 740 210, 690 210, 640 210
+C 590 210, 540 210, 490 210
+C 450 210, 390 210, 340 210
+C 290 210, 240 210, 190 210
+C 140 210, 90 210, 40 210
+Z"
+                  ></path>
+                  <path
+                    stroke="hsl(153, 60%, 40%)"
+                    stroke-width="2.5"
+                    fill-opacity="1"
+                    fill="none"
+                    width="558"
+                    height="205"
+                    d="M 40 30.625
+C 90 39.594, 140 48.563, 190 48.563
+C 240 48.563, 290 5, 340 5
+C 390 5, 440 16.104, 490 22.083
+C 540 28.063, 590 40.875, 640 40.875
+C 690 40.875, 740 26.354, 790 26.354
+C 840 26.354, 890 39.167, 940 51.979"
+                  ></path>
+                </g>
+                <path d="M 40 31 L 40 5" stroke="rgb(150, 150, 150, 0.75)" stroke-width="1" id="linieCursor"/>
+              </svg>
+            </div>
+
+            <!--Cerc Grafic Pe Categorii-->
             <div
               class="borderNormal rotunjit backgroundAlb tranzitie marime1"
               id="graficCercDiv"
-            ></div>
+            >
+            <div id="textGraficCerc">
+              <p id="peCategoriiText">Pe Categorii</p>
+              <p id="defalcareLunaraText">Defalcare Lunară</p></div>
+            </div>
           </section>
 
           <!--Ai si Bills-->
@@ -194,5 +596,6 @@
         </div>
       </div>
     </section>
+    <script src="Scripturi/animatieGrafic.js"></script>
   </body>
 </html>
