@@ -49,7 +49,4 @@ svg.addEventListener("mousemove", (e) => {
 
   // mic „smooth move”
   path.style.transform = "translateZ(0)";
-
-  console.log("Index:", closestIndex);
-  console.log("X:", x);
 });

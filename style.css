@@ -23,7 +23,8 @@
     --destructive-foreground: 0 0% 98%;
     --border: 220 13% 91%;
     --input: 220 13% 91%;
-    --ring: 153 60% 40%;
+    --ring: 191 100% 42%;
+    --up-color:153 60% 40%;
     --chart-1: 153 60% 40%;
     --chart-2: 262 52% 55%;
     --chart-3: 38 92% 50%;
@@ -308,7 +309,7 @@ body{
 #dashboardNavButton{
   border:none;
   border-radius:0.75rem;
-  background-color:rgb(41, 163, 108, 0.2);
+  background-color:rgb(0, 175, 214, 0.2);
 }
 .navSVG{
   height:20px;
@@ -343,7 +344,7 @@ body{
   font-weight: 600;
 }
 #iconTotalLuna{
-  background-color: rgb(41, 163, 108, 0.2);
+  background-color: rgb(0, 175, 214, 0.2);
   border-radius:0.75rem;
   height:40px;
   width:40px;
@@ -381,7 +382,7 @@ body{
   font-weight: 600;
 }
 #iconActiveBills{
-  background-color: rgb(41, 163, 108, 0.2);
+  background-color: rgb(0, 175, 214, 0.2);
   border-radius:0.75rem;
   height:40px;
   width:40px;
@@ -419,7 +420,7 @@ body{
   padding-left:20px;
 }
 #iconInAsteptare{
-  background-color: rgb(41, 163, 108, 0.2);
+  background-color: rgb(0, 175, 214, 0.2);
   border-radius:0.75rem;
   height:40px;
   width:40px;
@@ -441,7 +442,7 @@ body{
   padding-left:20px;
 }
 #iconPlatiteLunaAsta{
-  background-color: rgb(41, 163, 108, 0.2);
+  background-color: rgb(0, 175, 214, 0.2);
   border-radius:0.75rem;
   height:40px;
   width:40px;
@@ -691,8 +692,8 @@ body{
   border-radius:var(--radius);
 }
 #aiDiv{
-  background-color:rgb(41, 163, 108, 0.1);
-  border-color:rgb(41, 163, 108, 0.3);
+  background-color:rgb(0, 175, 214, 0.1);
+  border-color:rgb(0, 175, 214, 0.3);
   border-style:solid;
   border-width:1px;
 }
@@ -705,7 +706,7 @@ body{
   display:flex;
 }
 #iconAi{
-  background-color: rgb(41, 163, 108, 0.3);
+  background-color: rgb(0, 175, 214, 0.3);
   height:30px;
   width:30px;
   margin-left:30px;
@@ -793,7 +794,7 @@ body{
 /* Stiluri valori */
 .valUp{
   background-color:rgb(41, 163, 108, 0.2);
-  color:hsl(var(--ring));
+  color:hsl(var(--up-color));
 }
 .valDown{
   background-color: rgb(239, 67, 67, 0.2);
