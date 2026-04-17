@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>Smart Inovice | Dashboard</title>
+    <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" type="image/x-icon" href="Imagini/logoTransparent.png" />
   </head>
@@ -576,7 +577,52 @@ C 840 26.354, 890 39.167, 940 51.979"
             >
             <div id="textGraficCerc">
               <p id="peCategoriiText">Pe Categorii</p>
-              <p id="defalcareLunaraText">Defalcare Lunară</p></div>
+              <p id="defalcareLunaraText">Defalcare Lunară</p>
+            </div>
+            <div id="graficSiLegendaDiv">
+              <div id="graficDiv">
+                <div id="graficCerc">
+                  <p id="sumaGraficCerc">$2.0k</p>
+                </div>
+              </div>
+              <div id="legendaDiv">
+                <p class="legendaTextClass" id="slot1Legenda">
+                  <span class="cerculetLegenda">
+                    ●
+                    <span class="textLegenda">Energie</span>
+                  </span>
+                  <span class="sumaLegenda">$1000</span>
+                </p>
+                <p class="legendaTextClass" id="slot2Legenda">
+                  <span class="cerculetLegenda">
+                    ●
+                    <span class="textLegenda">Masă</span>
+                  </span>
+                  <span class="sumaLegenda">$400</span>
+                </p>
+                <p class="legendaTextClass" id="slot3Legenda">
+                  <span class="cerculetLegenda">
+                    ●
+                    <span class="textLegenda">Utilități</span>
+                  </span>
+                  <span class="sumaLegenda">$300</span>
+                </p>
+                <p class="legendaTextClass" id="slot4Legenda">
+                  <span class="cerculetLegenda">
+                    ●
+                    <span class="textLegenda">Învățare</span>
+                  </span>
+                  <span class="sumaLegenda">$220</span>
+                </p>
+                <p class="legendaTextClass" id="slot5Legenda">
+                  <span class="cerculetLegenda">
+                    ●
+                    <span class="textLegenda">Divertisment</span>
+                  </span>
+                  <span class="sumaLegenda">$80</span>
+                </p>
+              </div>
+            </div>
             </div>
           </section>
 
@@ -587,11 +633,121 @@ C 840 26.354, 890 39.167, 940 51.979"
             <div
               class="borderNormal rotunjit backgroundAlb tranzitie marime1"
               id="billsListDiv"
-            ></div>
+            ><div id="textBillsDiv">
+                <p class="titlu1">Facturi viitoare</p>
+                <p class="titlu2">
+                  Următoarele plăți scadente
+                </p>
+              </div>
+              <div id="listaFacturi">
+                <div class="factura">
+                  <div class="facturaIcon">🛡️</div>
+                  <div class="facturaContent">
+                    <div class="facturaTitluSiData">
+                      <p class="titluFactura">BitDefender</p>
+                      <p class="dataFactura">9 zile întârziere</p>
+                    </div>
+                    <div class="facturaSumaSiStare">
+                      <p class="sumaFactura">$320.00</p>
+                      <p class="stareFactura stareIntarziat">Întârziat</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="factura">
+                  <div class="facturaIcon">🏭</div>
+                  <div class="facturaContent">
+                    <div class="facturaTitluSiData">
+                      <p class="titluFactura">Factura la gaze</p>
+                      <p class="dataFactura">3 zile întârziere</p>
+                    </div>
+                    <div class="facturaSumaSiStare">
+                      <p class="sumaFactura">$250.72</p>
+                      <p class="stareFactura stareIntarziat">Întârziat</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="factura">
+                  <div class="facturaIcon">⚡</div>
+                  <div class="facturaContent">
+                    <div class="facturaTitluSiData">
+                      <p class="titluFactura">Electrica</p>
+                      <p class="dataFactura">7 zile termen limită</p>
+                    </div>
+                    <div class="facturaSumaSiStare">
+                      <p class="sumaFactura">$130.50</p>
+                      <p class="stareFactura stareInAsteptare">În așteptare</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="factura">
+                  <div class="facturaIcon">💧</div>
+                  <div class="facturaContent">
+                    <div class="facturaTitluSiData">
+                      <p class="titluFactura">Factura la apă</p>
+                      <p class="dataFactura">10 zile termen limită</p>
+                    </div>
+                    <div class="facturaSumaSiStare">
+                      <p class="sumaFactura">$52.50</p>
+                      <p class="stareFactura stareInAsteptare">În așteptare</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="factura">
+                  <div class="facturaIcon">🏠</div>
+                  <div class="facturaContent">
+                    <div class="facturaTitluSiData">
+                      <p class="titluFactura">Chiria</p>
+                      <p class="dataFactura">11 zile termen limită</p>
+                    </div>
+                    <div class="facturaSumaSiStare">
+                      <p class="sumaFactura">$520.00</p>
+                      <p class="stareFactura stareInAsteptare">În așteptare</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="factura">
+                  <div class="facturaIcon">📡</div>
+                  <div class="facturaContent">
+                    <div class="facturaTitluSiData">
+                      <p class="titluFactura">Factura la internet</p>
+                      <p class="dataFactura">15 zile termen limită</p>
+                    </div>
+                    <div class="facturaSumaSiStare">
+                      <p class="sumaFactura">$10.60</p>
+                      <p class="stareFactura stareInAsteptare">În așteptare</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
             <div
               class="borderNormal rotunjit backgroundAlb tranzitie marime1"
               id="aiDiv"
-            ></div>
+            ><section id="aiTitluSection">
+              <svg id="iconAi" viewBox="0 0 30 30">
+                <defs>
+                  <path id="shape" d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z" stroke = "hsl(153, 60%, 40%)" fill="none" stroke-width="2"/>
+                </defs>
+                <use href="#shape"
+                x = "2.5" y = "2.5"/>
+                <use href="#shape"
+                x = "60" y = "10" transform="scale(0.3)"/>
+                <use href="#shape"
+                x = "10" y = "60" transform="scale(0.3)"/>
+              </svg>
+              <p id="aiSavingsFoundText">AI SAVINGS FOUND</p>
+            </section>
+            <section id="aiSumaSection">
+              <p id="sumaNumarAi">1.546 RON <span id="sumaTimpAi">/lună</span></p>
+            </section>
+            <section id="aiMesajSection">
+              <p id="textAiMesaj">Am găsit <span class="evidentiere">5 oportunități</span> ca să îți micșorăm facturile</p>
+            </section>
+            <section id="aiButonSection">
+              <button id="veziEconomiileButon">Vezi economiile ➜</button>
+              <p id="potentialMesajAi">Potențial de 11.542,04 RON/an</p>
+            </section>
+        </div>
           </section>
         </div>
       </div>
