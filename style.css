@@ -966,6 +966,16 @@ body{
   font-size:15px;
   margin-left:0px;
 }
+.textTitlu{
+  font-family: 'Space Grotesk';
+  color:black;
+  font-size:20px;
+  margin-top:0px;
+  margin-bottom:-20px;
+  margin-left:40px;
+  font-weight:bold;
+  padding:0px;
+}
 
 /* Stiluri valori */
 .valUp{
