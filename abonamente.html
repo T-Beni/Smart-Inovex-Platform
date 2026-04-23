@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" type="image/x-icon" href="Imagini/logoTransparent.png" />
   </head>
-  <body>
+  <body id="bodyAll">
     <!--Partea fixa-->
 
     <!--Header-->
@@ -36,7 +36,6 @@
               />
             </div>
           </div>
-          <button id="notificari"></button>
         </div>
       </div>
     </section>
@@ -145,7 +144,7 @@
           </svg>
           <p class="navText">Abonamente</p>
         </div>
-        <div class="butonNav notSelected">
+        <div class="butonNav notSelected" onclick="window.location.href='sfaturi-ai.html'">
           <svg
             width="24"
             height="24"
@@ -161,7 +160,7 @@
           </svg>
           <p class="navText">Sfaturi AI</p>
         </div>
-        <div class="butonNav notSelected">
+        <div class="butonNav notSelected" onclick="window.location.href='economii.html'">
           <svg
             width="24"
             height="24"
@@ -178,7 +177,7 @@
           </svg>
           <p class="navText">Economii</p>
         </div>
-        <div class="butonNav notSelected">
+        <div class="butonNav notSelected" onclick="window.location.href='setari.html'">
           <svg
             width="24"
             height="24"
@@ -224,12 +223,13 @@
             </p>
           </div>
         </section>
-        <p class="textTitlu">Tendința cheltuielilor</p>
+        <p class="textTitlu">Toate abonamentele</p>
+        <p class="butonAdaugare">+ Add</p>
         <section class="billsSection">
             <div class="facturaDiv">
                 <div class="facturaHalf1">
-                    <p class="logoFactura">🛡️</p>
-                    <p class="titluFactura">Titlu Factură<br><span class="furnizorFactura">Furnizor</span></p>
+                    <p class="logoFactura">🚍</p>
+                    <p class="titluFactura">Titlu Abonament<br><span class="furnizorFactura">Furnizor</span></p>
                     <a href="" class="treiPuncteFactura">⋮</a>
                 </div>
                 <div class="facturaHalf2">
@@ -243,6 +243,7 @@
         </section>
       </div>
     </section>
+    <script src="Scripturi/refreshAux.js"></script>
     <script src="Scripturi/animatieGrafic.js"></script>
   </body>
 </html>

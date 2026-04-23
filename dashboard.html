@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" type="image/x-icon" href="Imagini/logoTransparent.png" />
   </head>
-  <body>
+  <body id="bodyAll">
     <!--Partea fixa-->
 
     <!--Header-->
@@ -36,7 +36,15 @@
               />
             </div>
           </div>
-          <button id="notificari"></button>
+          <button id="notificari" onclick="clickNotificari()"></button>
+          <div id="fereastraNotificari">
+            <div class="notificareDiv" onclick='window.open("https://canva.link/t4rf1zxwturfz9v", "_blank");'>
+              <p class="titluNotificare"><span class="nouDot" id="notificareMark">●</span>Prezentarea Smart Inovice este gata!🥳🎉</p>
+              <p class="continutNotificare">În sfârșit am terminat de integrat prezentarea ✨Smart Inovice✨ pe această platformă. Apasă AICI pentru a o vizualiza.</p>
+              <p class="timpNotificare">15:47</p>
+              <div class="pozaNotificare"></div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -135,7 +143,7 @@
           </svg>
           <p class="navText">Abonamente</p>
         </div>
-        <div class="butonNav notSelected">
+        <div class="butonNav notSelected" onclick="window.location.href='sfaturi-ai.html'">
           <svg width="24" height="24" viewBox="0 0 25 25" fill="none" stroke="hsl(220 9% 46%)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <polyline points="22 7 15 15.5 10 10.5 5 17"></polyline>
             <polyline points="16 7 22 7 22 13"></polyline>
@@ -148,7 +156,7 @@
           </svg>
           <p class="navText">Economii</p>
         </div>
-        <div class="butonNav notSelected">
+        <div class="butonNav notSelected" onclick="window.location.href='setari.html'">
           <svg width="24" height="24" viewBox="-4 -2.5 30 30" fill="none" stroke="hsl(220 9% 46%)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"></path>
             <circle cx="12" cy="12" r="3"></circle>
@@ -788,6 +796,8 @@ C 840 26.354, 890 39.167, 940 51.979"
         </div>
       </div>
     </section>
+    <script src="Scripturi/refreshAux.js"></script>
+    <script src="Scripturi/notificari.js"></script>
     <script src="Scripturi/animatieGrafic.js"></script>
   </body>
 </html>

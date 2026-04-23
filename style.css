@@ -84,6 +84,7 @@ body{
   background-color:hsl(var(--background));
   margin:0px;
   overflow-x:hidden;
+  opacity:0;
 }
 #half1{
   display:flex;
@@ -228,6 +229,73 @@ body{
 #notificari:hover{
   background-color:hsl(var(--accent));
   background-image:url(Imagini/notification_icon_true_hover.png);
+}
+#fereastraNotificari{
+  position:fixed;
+  top:43px;
+  right:30px;
+  height:300px;
+  width:400px;
+  border-radius:var(--radius);
+  border-style:solid;
+  border-width:1px;
+  border-color:hsl(var(--border));
+  background-color:rgb(255, 255, 255);
+  box-shadow: 0px 1px 10px hsl(var(--border));
+  padding-top:10px;
+  overflow-x:hidden;
+  overflow-y:scroll;
+  display:none;
+}
+#fereastraNotificari::-webkit-scrollbar {
+  display: none;
+}
+.notificareDiv{
+  border-style:none;
+  border-color:hsl(var(--border));
+  border-width:1px;
+  border-bottom-style:solid;
+  border-top-style:solid;
+  margin-top:0px;
+  position:relative;
+  width:400px;
+  height:auto;
+  background-color:transparent;
+  cursor:pointer;
+  user-select:none;
+}
+.titluNotificare{
+  color:black;
+  font-family:'Space Grotesk';
+  font-weight:bold;
+  font-size:15px;
+  margin-left:10px;
+  margin-right:10px;
+  margin-top:2px;
+  margin-bottom:5px;
+  text-wrap:wrap;
+}
+.continutNotificare{
+  font-family:'Inter';
+  font-size:12px;
+  color:hsl(var(--muted-foreground));
+  margin-left:10px;
+  margin-right:10px;
+  margin-top:0px;
+  margin-bottom:2px;
+}
+.timpNotificare{
+  font-family:'Inter';
+  color:hsl(var(--muted-foreground));
+  font-size:10px;
+  margin-bottom:0px;
+  margin-top:3px;
+  text-align: right;
+  margin-right:3px;
+}
+.nouDot{
+  color:hsl(var(--ring));
+  margin-right:3px;
 }
 #containerHeaderRight{
   background-color:transparent;
@@ -970,11 +1038,29 @@ body{
   font-family: 'Space Grotesk';
   color:black;
   font-size:20px;
-  margin-top:0px;
+  margin-top:5px;
   margin-bottom:-20px;
   margin-left:40px;
   font-weight:bold;
   padding:0px;
+}
+.butonAdaugare{
+  background-color:hsl(var(--ring));
+  border-style:none;
+  width:70px;
+  height:auto;
+  padding:5px;
+  font-family:'Inter';
+  color:white;
+  cursor:pointer;
+  font-weight:500;
+  border-radius:var(--radius);
+  text-wrap:nowrap;
+  text-align: center;
+  margin-right:20px;
+  justify-self: right;
+  margin-bottom:0px;
+  margin-top:0px;
 }
 
 /* Stiluri valori */
