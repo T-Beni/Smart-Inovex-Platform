@@ -1,12 +1,12 @@
 <!doctype html>
 <html>
   <head>
-    <title>Smart Inovice | Abonamente</title>
+    <title>Smart Inovice | Chat AI</title>
     <meta charset="UTF-8" />
-    <meta property="og:title" content="Smart Inovice - Abonamente">
-    <meta property="og:description" content="Smart Inovice | Abonamente - Urmăriți și optimizați plățile recurente">
+    <meta property="og:title" content="Smart Inovice - Chat AI">
+    <meta property="og:description" content="Smart Inovice | Chat AI - Discută cu un Chat Bot AI">
     <meta property="og:image" content="https://t-beni.github.io/Smart-Inovex-Platform/Imagini/meta_image.jpeg">
-    <meta property="og:url" content="https://t-beni.github.io//Smart-Inovex-Platform/abonamente.html">
+    <meta property="og:url" content="https://t-beni.github.io//Smart-Inovex-Platform/facturi.html">
     <meta property="og:type" content="website">
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" type="image/x-icon" href="Imagini/logoTransparent.png" />
@@ -22,20 +22,8 @@
       </div>
       <div id="component2">
         <div id="component2Text">
-          <p id="dashboardText">Abonamente</p>
-          <p id="dashboardText2">Urmăriți și optimizați plățile recurente</p>
-        </div>
-        <div id="containerHeaderRight">
-          <div id="containerSearchBar">
-            <div id="searchBar">
-              <p id="searchBarSymbol">🔎︎</p>
-              <input
-                type="text"
-                id="searchBarInput"
-                placeholder="Caută facturi..."
-              />
-            </div>
-          </div>
+          <p id="dashboardText">Chat AI</p>
+          <p id="dashboardText2">Discută cu un Chat Bot AI</p>
         </div>
       </div>
     </section>
@@ -87,7 +75,7 @@
           </svg>
           <p class="navText">Dashboard</p>
         </div>
-        <div class="butonNav notSelected" onclick="window.location.href='facturi.html'">
+        <div class="butonNav notSelected">
           <svg viewBox="0 0 20 20" class="navSVG">
             <path
               d="
@@ -119,7 +107,7 @@
           </svg>
           <p class="navText">Facturi</p>
         </div>
-        <div class="butonNav selected">
+        <div class="butonNav notSelected" onclick="window.location.href='abonamente.html'">
           <svg viewBox="0 0 20 20" class="navSVG">
             <rect
               x="2.5"
@@ -129,7 +117,7 @@
               rx="2"
               ry="2"
               fill="none"
-              stroke="rgb(0, 175, 214)"
+              stroke="hsl(220 9% 46%)"
               stroke-width="2"
             />
             <path
@@ -138,7 +126,7 @@
     L 18 8
   "
               fill="transparent"
-              stroke="rgb(0, 175, 214)"
+              stroke="hsl(220 9% 46%)"
               stroke-width="2"
             />
           </svg>
@@ -177,10 +165,10 @@
           </svg>
           <p class="navText">Economii</p>
         </div>
-<div class="butonNav notSelected" onclick="window.location.href='ai-chat.html'">
-              <svg class="navSVG" viewBox="0 0 30 30" stroke = "hsl(220 9% 46%)">
+        <div class="butonNav selected" onclick="window.location.href='ai-chat.html'">
+              <svg class="navSVG" viewBox="0 0 30 30">
                 <defs>
-                  <path id="shape" d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z" fill="none" stroke-width="2"/>
+                  <path id="shape" d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z" stroke = "rgb(0, 175, 214)" fill="none" stroke-width="2"/>
                 </defs>
                 <use href="#shape"
                 x = "2.5" y = "2.5"/>
@@ -189,7 +177,7 @@
                 <use href="#shape"
                 x = "10" y = "60" transform="scale(0.3)"/>
               </svg>
-          <p class="navText">Chat AI</p>
+          <p class="navText selectedText">Chat AI</p>
         </div>
         <div class="butonNav notSelected" onclick="window.location.href='setari.html'">
           <svg
@@ -213,48 +201,11 @@
 
       <!--Partea mobila-->
       <div id="component4">
-        <section class="billsSection" id="abonamenteCifreSection">
-          <div class="abonamenteDivCifre">
-            <p class="abonamenteTitluCifre">Abonamente active</p>
-            <p class="abonamenteSumaCifre">10</p>
-          </div>
-          <div class="abonamenteDivCifre">
-            <p class="abonamenteTitluCifre">Cost lunar</p>
-            <p class="abonamenteSumaCifre">10.005,56 RON</p>
-          </div>
-          <div class="abonamenteDivCifre"
-          style="
-            background-color:rgb(0, 175, 214, 0.1);
-            border-color:rgb(0, 175, 214, 0.3);
-            border-style:solid;
-            border-width:1px;">
-            <p class="abonamenteTitluCifre"
-            style="color:hsl(var(--ring));">✔ Economii potențiale</p>
-            <p class="abonamenteSumaCifre">200 RON
-              <span class="abonamenteSumaCifreAux">/lună</span>
-            </p>
-          </div>
-        </section>
-        <p class="textTitlu">Toate abonamentele</p>
-        <p class="butonAdaugare">+ Add</p>
-        <section class="billsSection">
-            <div class="facturaDiv">
-                <div class="facturaHalf1">
-                    <p class="logoFactura">🚍</p>
-                    <p class="titluFactura">Titlu Abonament<br><span class="furnizorFactura">Furnizor</span></p>
-                    <a href="" class="treiPuncteFactura">⋮</a>
-                </div>
-                <div class="facturaHalf2">
-                    <p class="stareFactura stareIntarziat2 stanga">⚠ Întârziat</p>
-                    <p class="sumaFactura sumaFacturaPozitie">
-                        300 RON<br>
-                        <span class="termenLimitaFactura">6 Mai</span>
-                    </p>
-                </div>
-            </div>
+        <section id="chatSection"></section>
+        <section id="inputSection">
+          <textarea id="inputUser" placeholder="Începe să dicuți cu Chat AI..."></textarea>
         </section>
       </div>
-    </section>
     <script src="Scripturi/refreshAux.js"></script>
     <script src="Scripturi/animatieGrafic.js"></script>
   </body>
