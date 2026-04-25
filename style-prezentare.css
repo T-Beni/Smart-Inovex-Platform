@@ -95,6 +95,7 @@ body{
     height:100vh;
     z-index:1;
     overflow:hidden;
+    position:relative;
 }
 @keyframes gradient {
 	0% {
@@ -269,4 +270,141 @@ body {
     font-weight:bold;
     margin:0px;
     color:#003057;
+}
+
+/* Slide 3 */
+#slide3{
+    position:relative;
+}
+#echipaNoastraText{
+    margin-top:40px;
+    text-align:center;
+    background: linear-gradient(45deg, #00c6ff, #003057);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#echipaNoastraDiv{
+    margin-bottom:0px;
+    display:flex;
+    justify-content: center;
+    gap:20px;
+    position:absolute;
+    bottom:0px;
+    left:0px;
+}
+.membru{
+    height:750px;
+    width:300px;
+    margin-bottom:0px;
+    position:relative;
+}
+.corp{
+    width:300px;
+    height:300px;
+    background-image:url(Imagini/Decoratiuni/omulet.svg);
+    background-size:100%;
+    margin-bottom:0px;
+    position:absolute;
+    bottom:0px;
+    z-index:3;
+}
+.corp2{
+    width:300px;
+    height:300px;
+    background-image:url(Imagini/Decoratiuni/omulet2.svg);
+    background-size:100%;
+    margin-bottom:0px;
+    position:absolute;
+    bottom:0px;
+    z-index:3;
+}
+.par{
+    height:150px;
+    width:200px;
+    background-size:100%;
+    background-repeat:no-repeat;
+    background-image:url(Imagini/Decoratiuni/Par2.svg);
+    justify-self:center;
+    margin-top:-50px;
+}
+#parEu, #parIonita{
+    background-image:url(Imagini/Decoratiuni/Par3.svg);
+    margin-top:-45px;
+}
+#parTomita{
+    background-image:url(Imagini/Decoratiuni/Par6.svg);
+    margin-top:-45px;
+}
+#parAlexandra{
+    background-image:url(Imagini/Decoratiuni/Par4.svg);
+    margin-top:-40px;
+    height:350px;
+    background-size:99%;
+}
+#parAndra{
+    background-image:url(Imagini/Decoratiuni/Par1.svg);
+    margin-top:-40px;
+    height:350px;
+    background-size:99%;
+}
+.valiza{
+    height:120px;
+    width:150px;
+    background-image:url(Imagini/Decoratiuni/valiza.svg);
+    background-repeat: no-repeat;
+    background-size:100%;
+    position:relative;
+    justify-self: center;
+}
+.v1{
+    top:0px;
+}
+.v2{
+    top:200px;
+}
+.nume{
+    font-family:'Inter';
+    font-size:20px;
+    color:hsl(var(--muted-foreground));
+    font-weight:bold;
+    background-color:rgb(245, 244, 244);
+    position:absolute;
+    top:30px;
+    right:10px;
+    width:75px;
+}
+.overflowNume{
+    font-size:16px;
+}
+.liniePunctata{
+    position:absolute;
+    top:130px;
+    height:300px;
+    justify-self: center;
+    background-color:transparent;
+    border:none;
+    border-color:#003057;
+    border-width:10px;
+    border-left-style:dotted;
+    z-index:2;
+}
+.scurtata{
+    height:250px;
+}
+#slide4Titlu{
+    text-align:left;
+    margin-left:40px;
+    margin-top:40px;
+    background: linear-gradient(45deg, #00c6ff, #003057);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#slide4Text{
+    font-family: 'Inter';
+    color:hsl(var(--muted-foreground));
+    font-weight:500;
+    font-size:30px;
+    margin-left:40px;
 }
