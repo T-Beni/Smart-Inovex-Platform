@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Grotesk:wght@300..700&display=swap');
+
+@layer base {
+  :root {
+    --font-heading: 'Space Grotesk', sans-serif;
+    --font-body: 'Inter', sans-serif;
+
+    --background: 220 20% 97%;
+    --foreground: 222 47% 11%;
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+    --primary: 153 60% 40%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 220 14% 96%;
+    --secondary-foreground: 222 47% 11%;
+    --muted: 220 14% 96%;
+    --muted-foreground: 220 9% 46%;
+    --accent: 262 52% 55%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 191 100% 42%;
+    --up-color:153 60% 40%;
+    --chart-1: 153 60% 40%;
+    --chart-2: 262 52% 55%;
+    --chart-3: 38 92% 50%;
+    --chart-4: 200 80% 50%;
+    --chart-5: 340 75% 55%;
+    --radius: 0.75rem;
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 222 47% 11%;
+    --sidebar-primary: 153 60% 40%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 220 14% 96%;
+    --sidebar-accent-foreground: 222 47% 11%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 153 60% 40%;
+  }
+
+  .dark {
+    --background: 224 30% 8%;
+    --foreground: 210 20% 95%;
+    --card: 224 25% 12%;
+    --card-foreground: 210 20% 95%;
+    --popover: 224 25% 12%;
+    --popover-foreground: 210 20% 95%;
+    --primary: 153 60% 45%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 224 20% 16%;
+    --secondary-foreground: 210 20% 95%;
+    --muted: 224 20% 16%;
+    --muted-foreground: 220 9% 55%;
+    --accent: 262 52% 60%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 224 20% 18%;
+    --input: 224 20% 18%;
+    --ring: 153 60% 45%;
+    --chart-1: 153 60% 45%;
+    --chart-2: 262 52% 60%;
+    --chart-3: 38 92% 55%;
+    --chart-4: 200 80% 55%;
+    --chart-5: 340 75% 60%;
+    --sidebar-background: 224 25% 10%;
+    --sidebar-foreground: 210 20% 95%;
+    --sidebar-primary: 153 60% 45%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 224 20% 16%;
+    --sidebar-accent-foreground: 210 20% 95%;
+    --sidebar-border: 224 20% 18%;
+    --sidebar-ring: 153 60% 45%;
+  }
+}
+::selection {
+  color: white;
+  background-color: hsl(var(--ring));
+}
+html {
+  scroll-behavior: smooth;
+}
+body{
+    margin:0px;
+    overflow-x:hidden;
+    opacity:0;
+    background-color:white;
+}
+.slide{
+    background-color:transparent;
+    width:100vw;
+    height:100vh;
+    z-index:1;
+    overflow:hidden;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+::-webkit-scrollbar {
+  display: none;
+}
+html {
+  scrollbar-width: none;
+}
+body {
+  -ms-overflow-style: none;
+}
+#progressBarSection{
+    width:100%;
+    height:40px;
+    background-color:transparent;
+    margin:0px;
+    position:fixed;
+    top:0px;
+    left:0px;
+    z-index:1000;
+    display:grid;
+    justify-content: center;
+    align-items: center;
+}
+#progressBarBefore{
+    width:1000px;
+    height:20px;
+    border-radius:var(--radius);
+    overflow:hidden;
+    padding:0px;
+    background-color:hsl(var(--border));
+    box-shadow: 0px 2px 10px rgb(207, 207, 207);
+}
+#progressBarAfter{
+    background: linear-gradient(90deg, #00add4, #52d8f7);
+    height:20px;
+    margin:0px;
+    width:0px;
+    transition: width 0.1s linear;
+    will-change: width;
+}
+
+/* Slide 1 */
+#logoSlide1{
+    width:600px;
+    height:600px;
+    background-color:transparent;
+    background-image:url(Imagini/Picture1.svg);
+    background-size:100%;
+    background-repeat: no-repeat;
+    position:absolute;
+    top:20%;
+    left:5%;
+}
+#slide1Text{
+    position:absolute;
+    height:auto;
+    width:auto;
+    top:20%;
+    left:40%;
+}
+#titluPrezentare{
+    font-family:'Space Grotesk';
+    font-size:100px;
+    background: linear-gradient(90deg, #00c6ff, #003057);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#hubSRL{
+    background: linear-gradient(90deg, #003057, #003057);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#slogan{
+    font-family:'Inter';
+    font-size:50px;
+    font-weight:500;
+    color:hsl(var(--muted-foreground));
+}
+
+/* Slide 2 */
+#slide2{
+    position:relative;
+}
+#decoratiune1{
+    width:400px;
+    height:200px;
+    background-image:url(Imagini/Decoratiuni/Picture2.svg);
+    background-repeat: no-repeat;
+    background-size:100%;
+}
+#decoratiune2{
+    width:400px;
+    height:200px;
+    background-image:url(Imagini/Decoratiuni/Picture3.svg);
+    background-repeat: no-repeat;
+    background-size:50%;
+}
+#decoratiune3{
+    width:400px;
+    height:700px;
+    background-image:url(Imagini/Decoratiuni/Picture6.svg);
+    background-repeat: no-repeat;
+    background-size:200%;
+    background-position:10%;
+    background-position-y: -10%;
+}
+#decoratiune4{
+    width:400px;
+    height:700px;
+    background-image:url(Imagini/Decoratiuni/Picture8.svg);
+    background-repeat: no-repeat;
+    background-size:100%;
+    background-position:10%;
+    background-position-y: 100%;
+    position:absolute;
+    bottom:0px;
+    right:0px;
+}
+#textSlide2{
+    width:auto;
+    height:auto;
+    font-family:'Inter';
+    color:hsl(var(--muted-foreground));
+    font-size:40px;
+    margin-left:50px;
+    margin-top:150px;
+}
+.styleBold{
+    font-family:'Space Grotesk';
+    font-weight:bold;
+    color:black;
+}
+.listDot{
+    background: linear-gradient(45deg, #00c6ff, #003057);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#textSlide2Div{
+    position:absolute;
+    margin:0px;
+    top:10%;
+    left:20%;
+}
+.spaceGrotesk{
+    font-family:'Space Grotesk';
+}
+.Inter{
+    font-family:'Inter';
+}
+.subtitlu{
+    font-size:45px;
+    margin:0px;
+    font-weight:500;
+    color:#00add4;
+}
+.titlu{
+    font-size:70px;
+    font-weight:bold;
+    margin:0px;
+    color:#003057;
+}
